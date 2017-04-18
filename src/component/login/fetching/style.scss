@@ -1,0 +1,51 @@
+@import "base.scss";
+.isLogin {
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 142.05px;
+    .fetchItem {
+        margin-bottom: 1em;
+        .dot {
+            margin-left: 0.25em;
+            span {
+                margin: 0em 0.25em;
+            }
+            &.notFinish span {
+                animation-name: dot;
+                animation-duration: 2.5s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                @for $i from 0 through 2 {
+                    &:nth-child(#{$i+1}) {
+                        animation-delay: $i*0.5s;
+                    }
+                }
+            }
+            &.finish {
+                &:after {
+                    content: "完成";
+                    margin-left: 0.25em;
+                }
+            }
+        }
+    }
+    #cancelButton {
+        background-color: $mainGreen;
+        color: white;
+    }
+}
+
+@keyframes dot {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    21% {
+        opacity: 1;
+    }
+}

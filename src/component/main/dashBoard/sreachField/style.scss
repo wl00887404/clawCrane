@@ -1,0 +1,54 @@
+@import "base.scss";
+.sreachBox {
+    //order: -10;
+    margin-bottom: 1.2em;
+    @include breakPoint(mobile) {
+        margin-bottom: 1em;
+    }
+    position: relative!important;
+    min-height: 0em!important;
+    width: 100%!important;
+    display:flex;
+    flex-direction:row!important;
+    align-items:stretch;
+    justify-content:flex-end;
+    @media screen and (min-width: 1024px) {
+        background-color: transparent!important;
+    }
+    &:after {
+        content: '';
+        padding: 0;
+        border: none;
+        background-size: 1.5em 1.5em;
+        height: 2.6em;
+        background-position: center center;
+        background-repeat: no-repeat;
+        @include breakPoint(mobile) {
+            background-image: url("./magnifying-glass.png");
+            min-width: 2.5em;
+        }
+        @include breakPoint(tablet) {
+            background-color: $mainGreen;
+            background-image: url("./magnifier.png");
+            min-width: 3em;
+        }
+    }
+    &>div {
+        display: flex;
+        border: 0.4em $mainGreen solid;
+        border-left-width: 0.4em;
+        border-right-width: 0.4em;
+        flex-grow: 1;
+        @include breakPoint(mobile) {
+            border-color: transparent;
+        }
+        .inputText {
+            flex-grow: 1;
+            align-items: stretch;
+            padding-left: 0.2em;
+            padding-right: 0.2em;
+            font-size: 1.4em;
+            background-color: transparent;
+        }
+    }
+}

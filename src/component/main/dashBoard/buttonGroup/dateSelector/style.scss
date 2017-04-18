@@ -1,0 +1,55 @@
+@import "base.scss";
+
+
+.DayPicker-Caption {
+    color: red;
+}
+
+.DayPicker-Day--today {
+    color: #d0021b;
+    font-weight: 500;
+}
+
+.DayPicker-Day--disabled {
+    color: #dce0e0;
+    cursor: default;
+    background-color: #eff1f1;
+}
+
+.DayPicker-Day--outside {
+    cursor: default;
+    color: #dce0e0;
+}
+
+
+/*
+.DayPicker-Day--sunday {
+    background-color: #f7f8f8;
+}
+
+.DayPicker-Day--sunday:not(.DayPicker-Day--today) {
+    color: #dce0e0;
+}
+
+.DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside) {
+    color: #FFF;
+    background-color: #4A90E2;
+}
+*/
+
+
+
+.datePickerContainer {
+    min-height: 0em!important;
+    min-width: 0em!important;
+    width:100%!important;    
+    .datePicker {
+        z-index: 10;
+        font-size: 1.2rem;
+        * {
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}

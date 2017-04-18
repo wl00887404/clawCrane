@@ -1,0 +1,11 @@
+{
+  "name": "edit-pwd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "EditPwd.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

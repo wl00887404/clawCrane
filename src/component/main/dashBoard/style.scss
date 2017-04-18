@@ -1,0 +1,25 @@
+@import "base.scss";
+.dashBoard {
+    display: flex;
+    flex-direction: column;
+    &>h2 {
+        font-size: 2em;
+        margin-bottom: 0.5rem;
+        position: relative;
+        @media (min-width: 530px) {
+            position: absolute;
+        }
+        /*position: relative;
+        padding-bottom:0.2em;
+        &:after{
+            content:'';
+            display: block;
+            position: absolute;
+            width:100%;
+            border-bottom:1px solid ;
+            //border-bottom-color:$mainGreen;
+            border-bottom-color:rgba(0,0,0,.5);
+            bottom:0;
+        }*/
+    }
+}

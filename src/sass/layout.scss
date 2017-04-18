@@ -1,0 +1,20 @@
+
+$mobile_tablet_breakPoint:768px;
+$tablet_desktop_breakPoint:992px;
+$desktop_largerDesktop_breakPoint:1200px;
+
+@mixin breakPoint($point) {
+	@if $point==largerDesktop{
+		@media (min-width: $desktop_largerDesktop_breakPoint) { @content ; }
+	}
+	@if $point == desktop {
+		@media (min-width: $tablet_desktop_breakPoint) { @content ; }
+	}
+	@else if $point ==tablet{
+		@media (min-width: $mobile_tablet_breakPoint) { @content ; }
+	}
+	@else if $point == mobile {
+		@media (max-width: $mobile_tablet_breakPoint)  { @content ; }
+
+	}
+}

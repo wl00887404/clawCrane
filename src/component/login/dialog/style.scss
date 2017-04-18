@@ -1,0 +1,39 @@
+@import "base.scss";
+.dialog {
+    max-width: 50em!important;
+    width: calc(100% - 2em)!important;
+    margin: 1em;
+    .header {
+        background-color: $mainGreen;
+        color: #fff;
+        font-size: 1.8em;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        h1 {
+            font-size: 1em;
+            white-space: nowrap;
+        }
+    }
+    .error {
+        margin-bottom: 0.5em;
+        border-radius: 2px;
+        overflow: hidden;
+        animation: slideDown 0.25s linear both;
+        background-color: lighten($wineRed, 55%);
+        span {
+            display: inline-block;
+            //font-size: 1em;
+            margin: .6em 1.25rem;
+            color: $wineRed;
+        }
+    }
+}
+
+@keyframes slideDown {
+    from {
+        max-height: 0em;
+    }
+    to {
+        max-height: 5em;
+    }
+}

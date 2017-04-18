@@ -1,0 +1,53 @@
+@import "base.scss";
+.popupMenu {
+    display: inline-block;
+    position: relative;
+    &>button {
+        &.show {
+            background-color: rgba(0, 0, 0, 0.12);
+        }
+    }
+    &>.menu {
+        z-index: 100;
+        @media (max-width: 530px) {
+            transform-origin: center center;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            max-width: 96%;
+            transform: translate(-50%, -50%) scale(0);
+        }
+        @media (min-width:530px) {
+            transform-origin: right top;
+            position: absolute;
+            right: 0em;
+            top: 110%;
+            width: auto;
+            transform: scale(0);
+        }
+        &.show {
+            transition: transform .3s;
+            @media (max-width: 530px) {
+                transform: translate(-50%, -50%) scale(1);
+            }
+            @media (min-width:530px) {
+                transform: scale(1);
+            }
+        }
+    }
+    .obfuscator {
+        z-index: 5;
+        position: fixed;
+        top: 0em;
+        left: 0em;
+        width: 99.9vw;
+        height: 99.9vh;
+        display: none;
+        @media (max-width: 530px) {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        &.show {
+            display: block;
+        }
+    }
+}

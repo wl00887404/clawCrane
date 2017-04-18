@@ -1,0 +1,45 @@
+@import "base.scss";
+.dialogBody {
+    padding: 0em 1.25rem;
+    margin: 0.75em 0em 1em 0em;
+    h2 {
+        font-size: 1.2em;
+        margin-bottom: 0.5em;
+    }
+    .inputContainer {
+        margin: 0.5em auto;
+        border: 1px $darkenGray solid;
+        display: flex;
+        div:first-child {
+            min-width:3em;
+            border-right: 1px $darkenGray solid;
+            &.account {
+                background: url("./users.png") center center no-repeat;
+            }
+            &.password {
+                background: url("./key.png") center center no-repeat;
+            }
+        }
+        input {
+            display: block;
+            border: none;
+            padding: 0.5em;
+            flex-grow:1;
+            min-width:0em;
+            font-size: 1.2em;
+        }
+    }
+    .buttonField {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1em;
+        button {
+            color: $seaBlue;
+        }
+        #loginButton {
+            background-color: $mainGreen;
+            color: white;
+        }
+    }
+    
+}

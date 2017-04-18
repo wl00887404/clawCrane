@@ -1,0 +1,40 @@
+@import "base.scss";
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+@import url(https://fonts.googleapis.com/css?family=Play);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+//@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+* {
+    box-sizing: border-box;
+    &:before,
+    &:after {
+        box-sizing: border-box;
+    }
+}
+
+#root {
+    width: 100%;
+    //min-height:100vh;
+}
+
+button,
+a {
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Play', 'Noto Sans TC', '微軟正黑體';
+    background-color: $lightenGray;
+    letter-spacing: 0.01em;
+}
+
+.logoText {
+    letter-spacing: 0.1em;
+    vertical-align: bottom;
+    small {
+        margin-left: -0.15em;
+        white-space: nowrap;
+    }
+}
+
+

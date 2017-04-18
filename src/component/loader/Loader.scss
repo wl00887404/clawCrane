@@ -1,0 +1,11 @@
+@import "base.scss";
+.loaderContainer {
+    margin: 2em 0em;
+    .loader {
+        width: 13em;
+        height: 13em;
+        &>* {
+            border-color: $mainGreen!important;
+        }
+    }
+}

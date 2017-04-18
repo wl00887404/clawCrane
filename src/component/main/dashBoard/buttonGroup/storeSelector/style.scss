@@ -1,0 +1,26 @@
+@import "base.scss";
+.storePickerContainer {
+    min-height: 0em!important;
+    min-width: 0em!important;
+    width: 100%!important;
+    padding: 0.5em 1em;
+    .storePicker {
+        &>* {
+            &>div {
+            	text-align:center;
+                padding: 0.9em 0em;
+                min-width: 10em;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                &>span{
+                	font-size: 1.3em;
+                    word-break: keep-all;
+                }
+            }
+            &:last-child {
+                &>div {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}

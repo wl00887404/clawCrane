@@ -1,0 +1,44 @@
+@import "base.scss";
+.date {
+    //text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    position: relative;
+    
+    //padding-bottom: 0.5em;
+	margin-top:0.5em;
+	border-bottom:1px solid rgba(0,0,0,.2);
+    margin-bottom:1em;
+    padding-bottom:0.2em;
+    /*&:before,&:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 98%;
+        border-bottom: 1px solid;
+        border-bottom-color:$mainGreen;
+    }
+    &:before{
+		width: 98%;
+		bottom: 0.3em;
+    }
+    &:after{
+		bottom: 0;
+    }*/
+
+    &>div {
+        &:nth-child(1) {
+            &>span {
+                font-size: 1.5em;
+            }
+        }
+        &:nth-child(2) {
+            margin-left: 0.5em;
+            &>span {
+                font-size: 1.25em;
+            }
+        }
+    }
+}

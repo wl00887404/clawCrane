@@ -1,0 +1,13 @@
+@import "base.scss";
+
+.buttonGroup{
+	text-align:right;
+	//margin-right:-0.5em;
+	button{
+		//height:88px;
+		border:1px solid;
+		border-color:$mainGreen;
+		color:$mainGreen;
+		margin-left:0.5em;
+	}
+}

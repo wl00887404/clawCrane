@@ -1,0 +1,104 @@
+@import "base.scss";
+.activeLink {
+    color: white!important;
+}
+
+
+.mainPage,
+{
+    padding: 1em 2em;
+    @include breakPoint(mobile) {
+        padding: 1em 0.8em;
+    }
+}
+
+
+/*
+* 自訂的layout
+*/
+
+.mdl-layout__header {
+    background-color: $mainGreen!important;
+    @media screen and (min-width: 1025px) {
+        z-index: 10!important;
+        width: 100%!important;
+        margin-left: 0em!important;
+    }
+    .headerTitle{
+        @media screen and (min-width: 1025px) {
+            //padding-left: 80px;
+        }
+        @media screen and (max-width: 1024px) {
+            //padding-left: 72px;
+        }
+    }
+}
+
+.mainHeader {
+    h1 {
+        font-size: 1.3em;
+    }
+    &>.mdl-layout__header-row{
+    	//padding-left:0em!important;
+    }
+}
+
+
+.mdl-layout__drawer-button {
+    @media screen and (min-width: 1024px) {
+        display: none!important;
+    }
+}
+
+
+
+
+/*
+.mdl-layout__content {
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: margin-left;
+}
+*/
+
+/*
+.mdl-layout__obfuscator {
+    @media screen and (min-width: 1024px) {
+        display: none!important;
+    }
+}
+
+
+.desktopInvisible-drawer {
+    @media screen and (min-width: 1024px) {
+        transform: translateX(-240px)!important;
+    }
+}
+
+.desktopInvisible-content {
+    @media screen and (min-width: 1024px) {
+        margin-left: 0px!important;
+    }
+}
+
+
+.drawerButtonForDesktop {
+    display: block;
+    height: 48px;
+    width: 48px;
+    border: 0;
+    left:0em;
+    flex-shrink: 0;
+    overflow: hidden;
+    text-align: center;
+    font-size: 26px;
+    line-height: 56px;
+    cursor: pointer;
+    margin: 8px 12px;
+    top:0em;
+    position: absolute;
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
+}
+*/

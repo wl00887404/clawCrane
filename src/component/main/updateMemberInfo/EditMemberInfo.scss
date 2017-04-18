@@ -1,0 +1,68 @@
+@import "base.scss";
+.editMemberInfo {
+    h2 {
+        font-size: 2em;
+        margin-bottom: 0.7rem;
+    }
+    .form {
+        width: 100%!important;
+        padding: 1em;
+        .row {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 1em 0em 1em 0em;
+            display: flex;
+            flex-wrap: wrap;
+            &:nth-child(1),
+            &:nth-child(2) {
+                padding:1.5em 0em;
+                @media screen and (max-width: 650px) {
+                    flex-wrap: nowrap;
+                }
+            }
+        }
+        .th {
+            width: 20%;
+            min-width: 6em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media screen and (max-width: 650px) {
+                justify-content: flex-start;
+            }
+        }
+        .td {
+            width: 80%;
+            @media screen and (max-width: 650px) {
+                width: 100%;
+            }
+            //padding: 0 1em;
+            a {
+                color: $seaBlue;
+            }
+        }
+        .buttonField {
+            border-bottom: none;
+            justify-content: flex-end;
+            padding-bottom: 0em;
+            @media screen and (max-width: 650px) {
+                justify-content: space-around!important;
+            }
+            button {
+                background-color: $mainGreen;
+                color: white;
+                margin-left: 1.5em;
+                @media screen and (max-width: 650px) {
+                    width: 40%;
+                    margin-left: 0em;
+                    justify-content: space-around;
+                }
+            }
+        }
+        .mdl-textfield {
+            width: 100%!important;
+        }
+        .mdl-textfield__label:after {
+            background-color: $mainGreen!important;
+        }
+    }
+}
